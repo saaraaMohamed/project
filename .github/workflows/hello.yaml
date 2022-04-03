@@ -4,7 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
 
-       steps:
+    steps:
       - name: install terraform
       - run: sudo apt-get install unzip
       - run: https://www.terraform.io/downloads.html
