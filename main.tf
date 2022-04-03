@@ -8,9 +8,8 @@ resource "aws_vpc" "main" {
 
 terraform {
   backend "s3" {
-  bucket = "mybackendtf"
-  key    = "statefile2"
-  region = "us-west-2"
+   region = "us-west-2"
+   key = "statefile"
+   bucket = "mybackendtf"
+  }
 }
-}
-
