@@ -6,13 +6,18 @@ jobs:
 
     steps:
       - name: install terraform
-      - run: sudo apt-get install unzip
-      - run: https://www.terraform.io/downloads.html
-      - run: wget https://releases.hashicorp.com/terraform/1.0.7/terraform_1.0.7_linux_amd64.zip
-      - run: unzip terraform_1.0.7_linux_amd64.zip
-      - run: sudo mv terraform /usr/local/bin/
-      - run: terraform --version
-      - name: check out repo code
+        run: sudo apt-get install unzip
+      - name: 1
+        run: https://www.terraform.io/downloads.html
+      - name: 2
+        run: wget https://releases.hashicorp.com/terraform/1.0.7/terraform_1.0.7_linux_amd64.zip
+      - name: 3
+        run: unzip terraform_1.0.7_linux_amd64.zip
+      - name: 4
+        run: sudo mv terraform /usr/local/bin/
+      - name: 5
+        run: terraform --version
+        name: check out repo code
         uses: actions/checkout@v3
 
           #- name:  configure AWS credentials
