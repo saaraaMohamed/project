@@ -17,7 +17,7 @@ jobs:
         run: sudo mv terraform /usr/local/bin/
       - name: 5
         run: terraform --version
-        name: check out repo code
+      - name: check out repo code
         uses: actions/checkout@v3
 
           #- name:  configure AWS credentials
