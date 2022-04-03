@@ -1,8 +1,8 @@
 name: GitHub Actions Demo
 on: [push]
 env: 
-    AWS_ACCESS_KEY_ID: $ {{ secret.AWS_ACCESS_KEY_ID }}
-    AWS_SEcRET_ACCESS_KEY: $ {{ secret.AWS_SEcRET_ACCESS_KEY }}
+    AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCESS_KEY_ID }}
+    AWS_SEcRET_ACCESS_KEY: ${{ secret.AWS_SEcRET_ACCESS_KEY }}
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
