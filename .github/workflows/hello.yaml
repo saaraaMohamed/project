@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: install terraform
         run: sudo apt-get install unzip
-      - name: 1
-        run: https://www.terraform.io/downloads.html
       - name: 2
         run: wget https://releases.hashicorp.com/terraform/1.0.7/terraform_1.0.7_linux_amd64.zip
       - name: 3
